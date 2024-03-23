@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+  place-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: hsl(225, 100%, 98%);
+  box-sizing: border-box;
+  max-width: 90vw;
+  height: 80vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+  padding: 1.25rem;
+}
+
+.content a:hover {
+  cursor: pointer;
+}
+
+.content h1 {
+  font-size: 1.25rem;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: hsl(224, 23%, 55%, 0.2);
+  border-radius: 0.5rem;
+}
+
+.plan a {
+  text-decoration: underline;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan h2 span {
+  color: hsl(224, 23%, 55%);
+}
+
+#payment {
+  display: flex;
+  height: 2.5rem;
+  background-color: hsl(245, 75%, 52%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.625rem;
+  color: hsl(225, 100%, 98%);
+  width: 100%;
+}
+
+@media screen and (min-width: 25rem) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+  }
+  main {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+}
